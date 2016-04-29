@@ -1,6 +1,5 @@
 package com.coveros.training.mtw.sample;
 
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.concurrent.TimeUnit;
@@ -11,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
- * Simple test class that verifies proper installation of MTW tools and libraries
+ * Simple test class that verifies proper installation of MTW tools and
+ * libraries
  * 
  * @author brian
  *
@@ -32,8 +32,7 @@ public class SampleFirefoxTest {
 	 */
 	@Test
 	public void amazon() throws Exception {
-		driver.get("http://www.amazon.com/");
-		assertEquals("Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more",
-				driver.getTitle());
+		driver.get("https://www.coveros.com/");
+		assertEquals("Coveros", driver.getTitle());
 	}
 }
